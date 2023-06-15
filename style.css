@@ -84,3 +84,57 @@ nav ul li a:hover{
     border: 1px solid #cda45E;
     padding: 20px;
 }
+.banner h2 span{
+color: #cda45E;
+font-size: 35px;
+}
+.banner h3{
+    color: #fff;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+.special{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.special .special-box{
+    height: 220px;
+    width: 160px;
+    background: rgba(12,11,9,0.6);
+    margin-top: -100px;
+    border-top-right-radius: 80px;
+    border-top-left-radius: 80px;
+    border: 2px solid #cda45E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.special-box img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #cda45E;
+   
+}
+
+.special-box h2{
+   color: #fff; 
+   font-size: 18px;
+   font-weight: 400;
+   padding: 10px;
+}
+.special-box h3{
+    color: #fff; 
+    font-size: 18px;
+    font-weight: 400;
+    padding: 5px;
+ }
