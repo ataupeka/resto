@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.veg{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0, 0.6));
+    background-image: url("../home-images/veg-header.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+header{
+    background: rgba(12,11,9, 0.6);
+    height: 150px;
+}
+header h1{
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 30px 0 20px 0;
+    text-decoration: uppercase;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    list-style: none;
+    padding: 10px;
+   
+    
+}
+header nav ul:nth-child(8){
+    margin-right: 5px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.4s ease-in;
+}
+
+header nav ul li a:hover{
+    color:#cda45E;
+}
+.cart{
+    padding: 5px 30px;
+   
+    margin-left: 30px;
+    border: 0;
+    outline: 0;
+    background-color: #cda45E;
+    color: #292929;
+    font-size: 17px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+}
+
+
+.cart:hover{
+    color:#cda45E;
+    background-color:#292929;
+    border: 2px solid #cda45E;
+}
+
+.cart i{
+    margin-left:10px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 50px;
+    margin:50px;
+    border: 2px solid #cda45E;
+}
+
+.container .food-box{
+    height: 300px;
+    width: 180px;
+    margin: 50px;
+    background: rgba(12,11,9,0.6); 
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border: 2px solid #cda45E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .food-box img{
+    height: 80px;
+    width: 100px;
+    background: #ddd;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 5px;
+
+
+}
+
+.container .food-box h2{
+    color: #cda45E;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+.container .food-box h3{
+    color: #cda45E;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.container .food-box .add-cart{
+    padding: 5px 10px;
+    margin: 10px;
+    border: 2px solid #cda45E;
+    outline: 0;
+    background-color: transparent;
+    color: #cda45E;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+
+
+}
+.container .food-box .add-cart:hover{
+    color: #292929;
+    background-color: #cda45E;
+
+}
