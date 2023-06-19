@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.veg{
+    min-height: 320vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0, 0.6));
+    background-image: url("../images/veg-header.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+header{
+    background: rgba(12,11,9, 0.6);
+    height: 150px;
+    border-bottom: 2px solid  rgba(12,11,9,0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+header h1{
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 30px 0 20px 0;
+    text-decoration: uppercase;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    list-style: none;
+    padding: 10px;
+   
+    
+}
+header nav ul:nth-child(8){
+    margin-right: 5px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.4s ease-in;
+}
+
+header nav ul li a:hover{
+    color:#cda45E;
+}
+.btn-cart{
+    padding: 5px 30px;
+   
+    margin-left: 30px;
+    border: 0;
+    outline: 0;
+    background-color: #cda45E;
+    color: #292929;
+    font-size: 17px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+}
+
+
+.btn-cart:hover{
+    color:#cda45E;
+    background-color:#292929;
+    border: 2px solid #cda45E;
+}
+
+.btn-cart i{
+    margin-left:10px;
+}
+
+.cart-count{
+position: absolute;
+background-color: #cda45E;
+color:#292929;
+text-align: center;
+top: 50px;
+right: 280px;
+height: 30px;
+width: 30px;
+padding: 3px;
+line-height: 25px;
+border-radius: 50%;
+font-weight: 600;
+z-index: 10;
+
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 50px;
+    margin:50px;
+    border: 2px solid #cda45E;
+    position: absolute;
+    top: 150px;
+}
+
+.container .food-box{
+    height: 380px;
+    width: 270px;
+    margin: 50px;
+    background: rgba(12,11,9,0.8); 
+  
+    border: 2px solid #cda45E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .food-box img{
+    height: 100px;
+    width: 100px;
+    background: #ddd;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 5px;
+    overflow:hidden;
+
+
+}
+.container .food-box img:hover{
+    transform: scale(1.2);
+    
+}
+.container .food-box h2{
+    color: #cda45E;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+
+    .container .food-box p{
+        color: #cda45E;
+        font-size: 17px;
+        font-weight: 400;
+        text-align: center;
+        padding: 10px;
+        padding-bottom: 5px;
+
+    }
+.container .food-box h3{
+    color: #cda45E;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.container .food-box .add-cart{
+    padding: 5px 10px;
+    margin: 10px;
+    border: 2px solid #cda45E;
+    outline: 0;
+    background-color: transparent;
+    color: #cda45E;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+
+
+}
+.container .food-box .add-cart:hover{
+    color: #292929;
+    background-color: #cda45E;
+
+}
+.cart-content{
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+gap: 15px;
+}
+
+.cart{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    width: 400px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgba(12,11,9,1); 
+    box-shadow: 0 1px 4px rgba(40,37,37,0.1); 
+    padding: 20px;
+    z-index: 100;
+
+
+}
+.cart-active{
+display:block;
+transition: 0.4s ease;
+}
+
+.cart-title{
+    text-align: center;
+    color: #cda45E;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cda45E;
+
+}
+.cart-food-title{
+    text-align: center;
+    color: #cda45E;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.cart-price{
+    text-align: center;
+    color: #cda45E;
+    font-size: 20px;
+    text-transform: uppercase; 
+}
+
+.cart-box{
+    display: flex;
+    flex-direction: column; 
+}
+.price-box{
+    display: flex;
+    justify-content: space-between;
+
+}
+.cart-img{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: #292929;
+    padding: 5px;
+}
+.detail-box{
+    display: grid;
+    row-gap: 15px;
+}
+
+
+
+
+
+.cart-price{
+
+    font-weight: 600;
+}
+
+.cart-amount{
+    font-weight: 600;
+    color: #ddd;
+}
+
+
+.cart-quantity{
+    background-color: #cda45E;
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 20px;
+    padding: 5px;
+
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #cda45E;
+}
+
+.cart-img{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: #292929;
+    padding: 5px;
+
+}
+
+
+.total-title{
+    text-align: start;
+    color: #cda45E;
+    font-size: 20px;
+    text-transform: uppercase;   
+}
+.total-price{
+    margin-left: 20px;
+    font-weight: 500;
+}
+.cart .btn-buy{
+    padding: 15px;
+    border: none;
+    outline: 0;
+    background: transparent;
+    border: 2px solid #cda45E;
+    color:#cda45E;
+    text-transform: uppercase;
+    font-size: 10px;
+    cursor: pointer;
+}
+.cart .btn-buy:hover{
+    color:#292929;
+    background: #cda45E;
+}
+
+#cart-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #fff;
+}
+.fa-trash{
+    font-size: 25px;
+    padding: 10px;
+    color:#fff;
+}
