@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./styles/veg-style.css">
+    <link rel="stylesheet" href="food-style.css">
     <title>Veg Foods</title>
 </head>
 <body>
@@ -38,8 +38,9 @@
 
 <li>  <a href=""> Juices</a>  </li>
 <li>  <a href=""> Cakes</a>  </li>
-<li>  <a href=""> Contact</a>  </li>
-<button class="cart">   Cart   <i class="fa fa-cart-shopping"></i></button>
+<li>  <a href="contact.html"> Contact</a>  </li>
+<button class="btn-cart">   Cart   <i class="fa fa-cart-shopping" id="cart-icon"></i></button>
+<div class="cart-count"> </div>
 
 
 
@@ -52,23 +53,57 @@
 
 
 
+
+<div class="cart">
+  <div class="cart-title"> Cart items</div>
+
+
+  <div class="cart-content">
+
+
+
+
+
+   
+
+
+<div class="total">
+<div class="total-title"> Total</div>
+<div class="total-price">    </div>
+<button class="btn-buy"> 
+    place order
+</button>
+<i class="fa fa-close" id="cart-close"></i>
+
+</div>
+
+</div>
+
 </header>
+
+
+
+
 <div class="container">
 
 
     <div class="food-box">
-     <img src="" class="food-img">
-     <h2 class="food-title"> Fried Rice</h2>
-     <h3 class="food-price"> $19</h3>
+     <img src="./images/veg-item-1.jpg" class="food-img">
+     <h2 class="food-title"> Item 1</h2>
+     <p> Ingredients:</p>
+     <p>  Lorem ipsum dolor sit amet consectetur </p>
+     <h3 class="food-price"> 15.60</h3>
      <button class="add-cart">
          Add to cart
      </button>
     </div>
 
     <div class="food-box">
-        <img src="" class="food-img">
-        <h2 class="food-title"> Fried Rice</h2>
-        <h3 class="food-price"> $19</h3>
+        <img src="./images/veg-item-2.jpg" class="food-img">
+        <h2 class="food-title"> Item 2</h2>
+        <p> Ingredients:</p>
+        <p>  Lorem ipsum dolor sit amet consectetur </p>
+        <h3 class="food-price"> 18.50</h3>
         <button class="add-cart">
             Add to cart
         </button>
@@ -76,51 +111,140 @@
 
 
        <div class="food-box">
-        <img src="" class="food-img">
-        <h2 class="food-title"> Fried Rice</h2>
-        <h3 class="food-price"> $19</h3>
+        <img src="./images/veg-item-3.jpg" class="food-img">
+        <h2 class="food-title"> Item 3</h2>
+        <p> Ingredients:</p>
+        <p>  Lorem ipsum dolor sit amet consectetur </p>
+        <h3 class="food-price"> 17.80</h3>
         <button class="add-cart">
             Add to cart
         </button>
        </div>
 
        <div class="food-box">
-        <img src="" class="food-img">
-        <h2 class="food-title"> Fried Rice</h2>
-        <h3 class="food-price"> $19</h3>
+        <img src="./images/veg-item-4.jpg" class="food-img">
+        <h2 class="food-title"> Item 4</h2>
+        <p> Ingredients:</p>
+        <p>  Lorem ipsum dolor sit amet consectetur </p>
+        <h3 class="food-price"> 21.50</h3>
         <button class="add-cart">
             Add to cart
         </button>
        </div>
 
        <div class="food-box">
-        <img src="" class="food-img">
-        <h2 class="food-title"> Fried Rice</h2>
-        <h3 class="food-price"> $19</h3>
+        <img src="./images/veg-item-5.jpg" class="food-img">
+        <h2 class="food-title"> Item 5</h2>
+        <p> Ingredients:</p>
+        <p>  Lorem ipsum dolor sit amet consectetur </p>
+        <h3 class="food-price"> 18.00</h3>
         <button class="add-cart">
             Add to cart
         </button>
        </div>
 
        <div class="food-box">
-        <img src="" class="food-img">
-        <h2 class="food-title"> Fried Rice</h2>
-        <h3 class="food-price"> $19</h3>
+        <img src="./images/veg-item-6.jpg" class="food-img">
+        <h2 class="food-title"> Item 6</h2>
+        <p> Ingredients:</p>
+        <p>  Lorem ipsum dolor sit amet consectetur </p>
+        <h3 class="food-price"> 19.50</h3>
         <button class="add-cart">
             Add to cart
         </button>
        </div>
 
        <div class="food-box">
-        <img src="" class="food-img">
-        <h2 class="food-title"> Fried Rice</h2>
-        <h3 class="food-price"> $19</h3>
+        <img src="./images/veg-item-7.jpg" class="food-img">
+        <h2 class="food-title"> Item 7</h2>
+        <p> Ingredients:</p>
+        <p>  Lorem ipsum dolor sit amet consectetur </p>
+        <h3 class="food-price"> 15.00</h3>
         <button class="add-cart">
             Add to cart
         </button>
        </div>
 
- </div>
+
+ <div class="food-box">
+    <img src="./images/veg-item-1.jpg" class="food-img">
+    <h2 class="food-title"> Item 8</h2>
+    <p> Ingredients:</p>
+    <p>  Lorem ipsum dolor sit amet consectetur </p>
+    <h3 class="food-price"> 15.60</h3>
+    <button class="add-cart">
+        Add to cart
+    </button>
+   </div>
+
+   <div class="food-box">
+       <img src="./images/veg-item-2.jpg" class="food-img">
+       <h2 class="food-title"> Item 9</h2>
+       <p> Ingredients:</p>
+       <p>  Lorem ipsum dolor sit amet consectetur </p>
+       <h3 class="food-price"> 18.50</h3>
+       <button class="add-cart">
+           Add to cart
+       </button>
+      </div>
+
+
+      <div class="food-box">
+       <img src="./images/veg-item-3.jpg" class="food-img">
+       <h2 class="food-title"> Item 10</h2>
+       <p> Ingredients:</p>
+       <p>  Lorem ipsum dolor sit amet consectetur </p>
+       <h3 class="food-price"> 17.80</h3>
+       <button class="add-cart">
+           Add to cart
+       </button>
+      </div>
+
+      <div class="food-box">
+       <img src="./images/veg-item-4.jpg" class="food-img">
+       <h2 class="food-title"> Item 11</h2>
+       <p> Ingredients:</p>
+       <p>  Lorem ipsum dolor sit amet consectetur </p>
+       <h3 class="food-price"> 21.50</h3>
+       <button class="add-cart">
+           Add to cart
+       </button>
+      </div>
+
+      <div class="food-box">
+       <img src="./images/veg-item-5.jpg" class="food-img">
+       <h2 class="food-title"> Item 12</h2>
+       <p> Ingredients:</p>
+       <p>  Lorem ipsum dolor sit amet consectetur </p>
+       <h3 class="food-price"> 18.00</h3>
+       <button class="add-cart">
+           Add to cart
+       </button>
+      </div>
+
+      <div class="food-box">
+       <img src="./images/veg-item-6.jpg" class="food-img">
+       <h2 class="food-title"> Item 13</h2>
+       <p> Ingredients:</p>
+       <p>  Lorem ipsum dolor sit amet consectetur </p>
+       <h3 class="food-price"> 19.50</h3>
+       <button class="add-cart">
+           Add to cart
+       </button>
+      </div>
+
+      <div class="food-box">
+       <img src="./images/veg-item-7.jpg" class="food-img">
+       <h2 class="food-title"> Item 14</h2>
+       <p> Ingredients:</p>
+       <p>  Lorem ipsum dolor sit amet consectetur </p>
+       <h3 class="food-price"> 15.00</h3>
+       <button class="add-cart">
+           Add to cart
+       </button>
+      </div>
+
+</div>
 
     </section>
 
@@ -135,5 +259,6 @@
 
 
     <script src="https://kit.fontawesome.com/6439266c9f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
