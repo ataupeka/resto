@@ -1,6 +1,5 @@
 
 
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
@@ -15,8 +14,9 @@
 
 
 .home{
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(home-images/home-1.jpg);
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/home-page-header.jpg");
+
  
     background-size: cover;
     background-repeat: no-repeat;
@@ -74,7 +74,9 @@ nav ul li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    min-height: 80vh;
+    margin-top: -50px;
+
 }
 
 .banner h2{
@@ -82,8 +84,10 @@ nav ul li a:hover{
     text-transform: uppercase;
     letter-spacing: 5px;
     border: 1px solid #cda45E;
-    padding: 20px;
+   
+    padding: 30px;
 }
+
 .banner h2 span{
 color: #cda45E;
 font-size: 35px;
@@ -101,15 +105,28 @@ font-size: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 
+}
+
+.special h1{
+    background-color: #cda45E;
+    padding: 10px;
+    color: #292929;
+
+    font-size: 15px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+   position: absolute;
+   left: 750px;
+   top: 460px;
 }
 .special .special-box{
     height: 220px;
     width: 160px;
     background: rgba(12,11,9,0.6);
     margin-top: -100px;
-    border-top-right-radius: 80px;
-    border-top-left-radius: 80px;
+ 
     border: 2px solid #cda45E;
     display: flex;
     flex-direction: column;
@@ -135,6 +152,56 @@ font-size: 35px;
 .special-box h3{
     color: #fff; 
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 900;
     padding: 5px;
  }
+
+
+
+ .address{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+ }
+ .box{
+    height: 200px;
+    width: 230px;
+    border: 2px solid #cda45E;
+    background-color: rgba(12,11,9,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#cda45E;
+
+ }
+ .box i{
+    font-size: 25px;
+    padding: 10px;
+    color:#fff;
+ }
+ .box-1 h1{
+    font-size: 18px;
+    text-transform: uppercase;
+ }
+
+ .box-1 h2{
+    font-size: 14px;
+    padding: 5px;
+ }
+ .box-2 i{
+    font-size: 40px;
+ }
+
+ .box h3{
+    font-size:15px;
+    padding-top: 10px;
+ }
+ .contact{
+    background-color: rgba(12,11,9,0.6);
+    padding: 10px;
+    border: 2px solid  #cda45E;
+ }
+
