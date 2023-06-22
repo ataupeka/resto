@@ -1,5 +1,6 @@
 
 
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
@@ -68,6 +69,43 @@ nav ul li a{
 }
 nav ul li a:hover{
     color: #cda45E;
+ 
+}
+
+nav .social{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap:10px;
+}
+
+nav .social a{
+    background: transparent;
+    border: 2px solid #cda45E;
+    height: 30px;
+    width: 30px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-decoration: none;
+    transition: 0.4s ease;
+
+}
+
+
+nav .social a:hover i{
+  
+    color: #292929;
+}
+nav .social a:hover{
+  
+    background: #cda45E;
+}
+
+nav .social a i{
+    font-size: 18px;
+   color: #cda45E;
 }
 .banner{
     display: flex;
@@ -156,7 +194,27 @@ font-size: 35px;
     padding: 5px;
  }
 
+ .contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    gap: 20px;
 
+ }
+
+
+.panel{
+    height: 450px;
+    width: 500px;
+    background-color: rgba(12,11,9,0.6);
+    padding: 10px;
+}
+.panel h3{
+    color:#cda45E;
+    text-transform: uppercase;
+    padding: 2px;
+}
 
  .address{
     display: flex;
@@ -175,7 +233,13 @@ font-size: 35px;
     justify-content: center;
     align-items: center;
     color:#cda45E;
+    overflow: hidden;
+    transition:0.3s ease;
+    cursor: pointer;
 
+ }
+ .box:hover{
+    transform: scale(0.5);
  }
  .box i{
     font-size: 25px;
@@ -203,5 +267,67 @@ font-size: 35px;
     background-color: rgba(12,11,9,0.6);
     padding: 10px;
     border: 2px solid  #cda45E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 420px;
+ }
+
+
+
+.form-group{
+    padding: 10px;
+
+}
+
+input{
+    height: 30px;
+    width: 300px;
+    padding: 5px;
+    font-size: 14px;
+    background: #cda45E;
+    color: #fff;
+    border: none;
+    outline: none;
+
+}
+textarea{
+    background: #cda45E;
+    border: none;
+    resize: none;
+    color:#fff;
+    padding: 10px;
+    outline: none;
+
+}
+.btn-send{
+    padding: 8px 30px;
+    background-color: transparent;
+    border: 2 px solid #cda45E;
+    outline: none;
+    color:  #cda45E;
+    cursor: pointer;
+ transition: 0.4s ease;
+}
+
+
+
+
+
+
+
+
+ @media (max-width:991px){
+
+
+ }
+ @media (max-width:768px){
+
+
+ }
+ @media (max-width:450px){
+
+
  }
 
